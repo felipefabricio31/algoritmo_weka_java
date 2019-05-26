@@ -27,7 +27,7 @@ public class PROJETO_WEKA_PROVA {
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
         //Instacia da base de dados
-        DataSource ds = new DataSource("src/projeto_weka_prova/vendas.arff");
+        DataSource ds = new DataSource("src/Dados/vendas.arff");
         //Atribuição dos valores da API para ins
         Instances ins =  ds.getDataSet();
         //System.out.println(ins.toString());
@@ -50,8 +50,6 @@ public class PROJETO_WEKA_PROVA {
         //Qual a porcentagem desta pessoa gastar muito
         double probabilidade[] = nb.distributionForInstance(novo);
         System.out.println("Sim: " + probabilidade[1]);
-        System.out.println("Sim: " + probabilidade[0]);
-        
+        System.out.println("Não: " + probabilidade[0]);
     }
-    
 }
