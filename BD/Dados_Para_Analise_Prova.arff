@@ -1,18 +1,13 @@
 @relation A_Definir_Nome
-  
-@attribute cidade 
+
 @attribute regiao
 @attribute idade
 @attribute sexo
 @attribute civil
-@attribute Grau_Escolaridade
-@attribute Serie_Escolar
-@attribute Qtd_Anos_Estudos
 @attribute Peso_Kg
 @attribute De_Peso_Até_Peso
 @attribute Altura_Cm
 @attribute De_Altura_Até_Altura
-@attribute Gravidez
 @attribute Feijão
 @attribute Frequencia_Horta_Crua
 @attribute Quantas_Vezes
@@ -27,11 +22,6 @@
 @attribute Bebe_Bebida_Alcoolica
 @attribute Frequencia_Bebe_Alcool
 @attribute Faz_Exercicios_Fisicos
-@attribute Qual_Exercicio
-@attribute Pratica_1_Vez_Semana
-@attribute Frequencia_Exercicio
-@attribute Duracao_Exercicio
-@attribute Tem_Trabalha
 @attribute Anda_Bastante_A_Pé
 @attribute Carrega_Peso
 @attribute Trajeto_a_pe_ou_Bicicleta
@@ -77,6 +67,6 @@
 
   
 @data
-curitiba;sul;de 35 a 44 anos;feminino;casado legalmente;curso ginasial  ou ginásio;8;de 6 a 9 anos de estudo;de 53 a 64 kg;de 160 a 179 cm;não;1 a 2 dias por semana ;5 a 6 dias por semana;não informou;5 a 6 dias por semana;não informou;comer com a gordura;comer com a pele;todos os dias  (inclusive sábado e domingo);não informou;quase nunca ;não informou;não informou;integral;sim;todos os dias (inclusive sábado e domingo);não;não informou;não informou;não informou;não informou;não;não informou;não informou;não informou;não informou;eu sozinho;não informou;sim mas não diariamente;1;de 26 a 36 anos;sim;não informou;amarela ;não;1 linha;muito bom;não;não;não;de 1 a 3 adultos;não;de 18.5 a 24.9 peso adequado;não;não;não;não;0;0;0;0;sim;sim;não;0;não;sim;não;sim;sim;não;não;não
-distrito federal;norte;de 35 a 44 anos;feminino;casado legalmente;1º grau  ou fundamental ou supletivo de 1º grau;3;de 10 a 12 anos de estudo;de 89 a 100 kg;de 140 a 159 cm;não;quase nunca ;5 a 6 dias por semana;não informou;5 a 6 dias por semana;não informou;tirar sempre o excesso de gordura;tirar sempre a pele;1 a 2 dias por semana ;2 vezes no dia;todos os dias  (inclusive sábado e domingo);normal;2 copos/latinhas;não informou;3;não informou;não;não informou;não informou;não informou;não informou;sim;não;sim;sim parte do trajeto;não informou;eu sozinho;o(a) sr(a);não;não informou;não informou;não informou;sim mas não diariamente;preta ;não;1 linha;regular;sim;não;não;de 1 a 3 adultos;não;de 30 ou mais obesidade;não;sim;não;sim;0;0;2;2;não;não;não;0;não;sim;sim;sim;não;não;sim;não
-goiania;norte;de 55 a 64 anos;feminino;casado legalmente;curso ginasial  ou ginásio;5;de 1 a 5 anos de estudo;de 65 a 76 kg;de 160 a 179 cm;não informou;1 a 2 dias por semana ;1 a 2 dias por semana ;no almoço e no jantar (2 vezes ao dia);5 a 6 dias por semana;não informou;comer com a gordura;tirar sempre a pele;5 a 6 dias por semana;não informou;quase nunca ;não informou;não informou;integral;sim;todos os dias (inclusive sábado e domingo);sim;caminhada em esteira;sim;todos os dias (inclusive sábado e domingo);entre 40 e 49 minutos;sim;sim;não;sim todo o trajeto;entre 30 e 39 minutos;eu sozinho;o(a) sr(a);não;não informou;não informou;não informou;sim mas não diariamente;amarela ;não;1 linha;regular;sim;não;não;de 4 a 6 adultos;não;de 25 a 29.9 excesso de peso;sim;não;sim;não;2;2;0;2;sim;não;não;1;sim;sim;sim;não;sim;não;sim;não
+sul;de 35 a 44 anos;feminino;casado legalmente;curso ginasial  ou ginásio;8;de 6 a 9 anos de estudo;de 53 a 64 kg;de 160 a 179 cm;não;1 a 2 dias por semana ;5 a 6 dias por semana;não informou;5 a 6 dias por semana;não informou;comer com a gordura;comer com a pele;todos os dias  (inclusive sábado e domingo);não informou;quase nunca ;não informou;não informou;integral;sim;todos os dias (inclusive sábado e domingo);não;não informou;não informou;não informou;não informou;não;não informou;não informou;não informou;não informou;eu sozinho;não informou;sim mas não diariamente;1;de 26 a 36 anos;sim;não informou;amarela ;não;1 linha;muito bom;não;não;não;de 1 a 3 adultos;não;de 18.5 a 24.9 peso adequado;não;não;não;não;0;0;0;0;sim;sim;não;0;não;sim;não;sim;sim;não;não;não
+norte;de 35 a 44 anos;feminino;casado legalmente;1º grau  ou fundamental ou supletivo de 1º grau;3;de 10 a 12 anos de estudo;de 89 a 100 kg;de 140 a 159 cm;não;quase nunca ;5 a 6 dias por semana;não informou;5 a 6 dias por semana;não informou;tirar sempre o excesso de gordura;tirar sempre a pele;1 a 2 dias por semana ;2 vezes no dia;todos os dias  (inclusive sábado e domingo);normal;2 copos/latinhas;não informou;3;não informou;não;não informou;não informou;não informou;não informou;sim;não;sim;sim parte do trajeto;não informou;eu sozinho;o(a) sr(a);não;não informou;não informou;não informou;sim mas não diariamente;preta ;não;1 linha;regular;sim;não;não;de 1 a 3 adultos;não;de 30 ou mais obesidade;não;sim;não;sim;0;0;2;2;não;não;não;0;não;sim;sim;sim;não;não;sim;não
+de 55 a 64 anos;feminino;casado legalmente;curso ginasial  ou ginásio;5;de 1 a 5 anos de estudo;de 65 a 76 kg;de 160 a 179 cm;não informou;1 a 2 dias por semana ;1 a 2 dias por semana ;no almoço e no jantar (2 vezes ao dia);5 a 6 dias por semana;não informou;comer com a gordura;tirar sempre a pele;5 a 6 dias por semana;não informou;quase nunca ;não informou;não informou;integral;sim;todos os dias (inclusive sábado e domingo);sim;caminhada em esteira;sim;todos os dias (inclusive sábado e domingo);entre 40 e 49 minutos;sim;sim;não;sim todo o trajeto;entre 30 e 39 minutos;eu sozinho;o(a) sr(a);não;não informou;não informou;não informou;sim mas não diariamente;amarela ;não;1 linha;regular;sim;não;não;de 4 a 6 adultos;não;de 25 a 29.9 excesso de peso;sim;não;sim;não;2;2;0;2;sim;não;não;1;sim;sim;sim;não;sim;não;sim;não
