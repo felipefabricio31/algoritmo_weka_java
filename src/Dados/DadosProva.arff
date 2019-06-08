@@ -1,0 +1,111 @@
+@relation provaweka
+
+@attribute regiao {centrooeste,nordeste,norte,sudeste,sul}
+@attribute Idade {>=65,25-34,35-44,45-54,55-64}
+@attribute Peso {0,101-112,113-124,125-136,30-40,41-52,53-64,65-76,77-88,89-100}
+@attribute Altura {>=200,120-139,140-159,160-179,180-199}
+@attribute Come_Carne_Com_Gordura {nao,sim}
+@attribute Quantas_Vezes_Bebe_Refrigerante {1-2_dias,3-4_dias,5-6_dias,nunca,quase_nunca,todos}
+@attribute Qual_Tipo_Refrigerante {nao_informou,ambos,diet/light/zero,normal}
+@attribute Bebe_Bebida_Acoolica {nao,sim}
+@attribute Frequencia_bebe_Alcool {nao_informou,1-2_dias,3-4_dias,5-6_dias,todos}
+@attribute Faz_Exercicios_Fisicos {nao,sim}
+@attribute Fumante {nao,sim_diariamente,sim_mas_nao_diariamente}
+@attribute Estado_de_Saude {bom,muito_bom,muito_ruim,regular,ruim}
+@attribute Tem_PressaoAlta {nao,sim}
+@attribute Tem_diabetes {nao,sim}
+@attribute Tem_colesterol_ou_Trigliceridies {nao,sim}
+@attribute Esta_Obeso {nao,sim}
+@attribute Tem_Hipertensao_Arterial {nao,sim}
+
+@data
+centrooeste,>=65,65-76,160-179,nao,nunca,normal,nao,1-2_dias,nao,nao,ruim,sim,nao,nao,nao,sim
+centrooeste,35-44,89-100,180-199,nao,5-6_dias,normal,sim,1-2_dias,sim,nao,bom,sim,nao,nao,nao,sim
+centrooeste,45-54,77-88,160-179,sim,1-2_dias,normal,sim,3-4_dias,nao,nao,bom,nao,nao,sim,nao,nao
+centrooeste,>=65,125-136,160-179,sim,todos,normal,sim,5-6_dias,nao,nao,muito_ruim,sim,nao,sim,sim,sim
+centrooeste,55-64,65-76,160-179,nao,1-2_dias,normal,nao,nao_informou,sim,nao,bom,sim,nao,nao,nao,sim
+centrooeste,55-64,89-100,160-179,nao,todos,ambos,sim,3-4_dias,sim,nao,bom,sim,nao,sim,sim,sim
+centrooeste,>=65,65-76,160-179,nao,nunca,nao_informou,sim,todos,sim,sim_diariamente,muito_bom,nao,nao,nao,nao,nao
+centrooeste,>=65,65-76,160-179,nao,1-2_dias,normal,sim,1-2_dias,nao,nao,regular,sim,nao,sim,nao,sim
+centrooeste,55-64,65-76,160-179,sim,5-6_dias,normal,nao,nao_informou,sim,nao,bom,nao,nao,nao,nao,nao
+centrooeste,>=65,65-76,160-179,nao,1-2_dias,diet/light/zero,nao,nao_informou,nao,nao,regular,sim,sim,sim,nao,sim
+centrooeste,>=65,65-76,180-199,nao,1-2_dias,diet/light/zero,nao,nao_informou,nao,nao,regular,sim,sim,nao,nao,sim
+centrooeste,>=65,65-76,160-179,nao,quase_nunca,nao_informou,sim,todos,sim,sim_mas_nao_diariamente,bom,sim,nao,nao,nao,sim
+centrooeste,>=65,53-64,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,nao,ruim,sim,nao,nao,nao,sim
+centrooeste,>=65,65-76,120-139,nao,nunca,nao_informou,nao,nao_informou,sim,nao,bom,sim,nao,nao,sim,sim
+centrooeste,>=65,53-64,160-179,nao,quase_nunca,nao_informou,sim,1-2_dias,sim,nao,regular,sim,nao,sim,nao,sim
+centrooeste,>=65,53-64,160-179,nao,1-2_dias,normal,nao,nao_informou,sim,nao,regular,nao,nao,nao,nao,nao
+centrooeste,45-54,89-100,160-179,sim,3-4_dias,normal,sim,3-4_dias,sim,nao,muito_bom,sim,nao,nao,sim,sim
+centrooeste,>=65,65-76,160-179,sim,3-4_dias,normal,nao,nao_informou,nao,nao,regular,sim,nao,nao,nao,sim
+centrooeste,45-54,65-76,160-179,nao,todos,normal,sim,1-2_dias,nao,sim_diariamente,muito_bom,sim,nao,nao,nao,sim
+centrooeste,>=65,65-76,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,nao,ruim,nao,sim,nao,nao,nao
+centrooeste,>=65,77-88,180-199,nao,1-2_dias,normal,nao,nao_informou,sim,nao,bom,sim,nao,sim,nao,sim
+centrooeste,55-64,53-64,140-159,nao,1-2_dias,normal,nao,nao_informou,sim,nao,bom,nao,nao,nao,nao,nao
+centrooeste,>=65,77-88,160-179,nao,nunca,nao_informou,nao,nao_informou,nao,nao,bom,nao,nao,nao,nao,nao
+centrooeste,45-54,77-88,160-179,sim,todos,normal,sim,1-2_dias,nao,nao,regular,nao,nao,sim,nao,nao
+centrooeste,55-64,65-76,160-179,sim,5-6_dias,normal,nao,nao_informou,nao,nao,muito_bom,nao,nao,nao,nao,nao
+centrooeste,55-64,77-88,160-179,sim,1-2_dias,normal,sim,3-4_dias,sim,nao,regular,nao,nao,nao,nao,nao
+centrooeste,>=65,89-100,160-179,nao,1-2_dias,diet/light/zero,nao,nao_informou,sim,nao,regular,sim,sim,sim,sim,sim
+nordeste,45-54,77-88,160-179,sim,1-2_dias,normal,sim,1-2_dias,nao,nao,bom,sim,nao,nao,nao,sim
+nordeste,45-54,89-100,160-179,sim,quase_nunca,nao_informou,sim,1-2_dias,nao,nao,regular,nao,nao,nao,sim,nao
+nordeste,>=65,77-88,160-179,nao,quase_nunca,nao_informou,sim,5-6_dias,nao,sim_mas_nao_diariamente,bom,sim,nao,sim,nao,sim
+nordeste,>=65,53-64,160-179,sim,nunca,nao_informou,nao,nao_informou,nao,sim_diariamente,bom,sim,sim,nao,nao,sim
+nordeste,>=65,53-64,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,nao,nao,nao,sim
+nordeste,>=65,77-88,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,nao,muito_bom,nao,nao,sim,nao,nao
+nordeste,>=65,53-64,140-159,nao,nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,nao,nao,nao,sim
+nordeste,35-44,77-88,160-179,nao,nunca,nao_informou,sim,1-2_dias,nao,sim_mas_nao_diariamente,regular,nao,sim,sim,sim,nao
+nordeste,>=65,65-76,160-179,nao,1-2_dias,normal,nao,nao_informou,sim,nao,regular,nao,nao,sim,nao,nao
+nordeste,55-64,65-76,160-179,nao,quase_nunca,nao_informou,sim,todos,sim,sim_diariamente,muito_bom,nao,nao,nao,nao,nao
+nordeste,45-54,77-88,160-179,nao,1-2_dias,normal,sim,1-2_dias,sim,nao,bom,sim,nao,nao,sim,sim
+nordeste,45-54,89-100,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,nao,regular,sim,nao,nao,sim,sim
+nordeste,>=65,77-88,160-179,nao,1-2_dias,normal,nao,nao_informou,nao,nao,regular,nao,sim,nao,sim,nao
+nordeste,>=65,65-76,140-159,nao,1-2_dias,ambos,nao,nao_informou,sim,nao,regular,nao,nao,nao,nao,nao
+nordeste,45-54,77-88,160-179,nao,1-2_dias,diet/light/zero,nao,nao_informou,nao,nao,bom,nao,nao,nao,nao,nao
+nordeste,>=65,65-76,180-199,nao,nunca,nao_informou,nao,nao_informou,sim,nao,regular,sim,sim,nao,nao,sim
+nordeste,>=65,53-64,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,nao,nao,nao,sim
+nordeste,>=65,65-76,160-179,nao,1-2_dias,normal,nao,nao_informou,sim,nao,bom,nao,nao,nao,nao,nao
+nordeste,55-64,77-88,160-179,nao,nunca,nao_informou,sim,1-2_dias,sim,nao,muito_bom,nao,nao,nao,nao,nao
+nordeste,55-64,53-64,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,nao,bom,nao,nao,sim,nao,nao
+nordeste,55-64,53-64,160-179,nao,nunca,nao_informou,nao,nao_informou,nao,nao,bom,nao,sim,nao,nao,nao
+norte,55-64,77-88,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,nao,bom,nao,nao,nao,nao,nao
+norte,55-64,77-88,180-199,sim,quase_nunca,nao_informou,nao,nao_informou,nao,nao,regular,nao,nao,sim,nao,nao
+norte,55-64,53-64,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,sim_mas_nao_diariamente,bom,sim,nao,nao,nao,sim
+norte,>=65,77-88,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,sim_diariamente,regular,sim,sim,sim,sim,sim
+norte,45-54,65-76,160-179,sim,5-6_dias,diet/light/zero,nao,nao_informou,nao,nao,ruim,nao,nao,nao,nao,nao
+norte,>=65,53-64,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,nao,bom,nao,nao,nao,nao,nao
+norte,>=65,65-76,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,sim_diariamente,muito_bom,nao,nao,nao,nao,nao
+norte,>=65,65-76,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,sim,sim,nao,sim
+norte,>=65,65-76,160-179,sim,nunca,nao_informou,sim,1-2_dias,sim,nao,regular,nao,nao,nao,nao,nao
+norte,55-64,77-88,160-179,sim,3-4_dias,normal,nao,nao_informou,nao,nao,ruim,sim,nao,sim,nao,sim
+norte,>=65,77-88,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,sim,nao,bom,sim,nao,nao,nao,sim
+norte,45-54,53-64,160-179,nao,1-2_dias,normal,nao,nao_informou,sim,sim_diariamente,bom,sim,nao,nao,nao,sim
+norte,55-64,77-88,140-159,nao,1-2_dias,normal,nao,nao_informou,nao,sim_diariamente,muito_bom,nao,nao,nao,sim,nao
+norte,>=65,41-52,160-179,nao,nunca,nao_informou,nao,nao_informou,nao,nao,muito_bom,nao,nao,nao,nao,nao
+norte,55-64,89-100,160-179,nao,nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,sim,nao,sim,sim
+norte,55-64,77-88,160-179,sim,quase_nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,sim,sim,nao,sim
+norte,>=65,89-100,160-179,nao,1-2_dias,normal,nao,nao_informou,nao,nao,bom,nao,nao,nao,sim,nao
+norte,45-54,77-88,160-179,nao,nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,nao,nao,nao,sim
+norte,35-44,89-100,160-179,sim,1-2_dias,diet/light/zero,sim,todos,nao,nao,bom,sim,sim,nao,sim,sim
+norte,>=65,53-64,160-179,nao,1-2_dias,normal,nao,nao_informou,nao,sim_diariamente,muito_bom,nao,nao,nao,nao,nao
+norte,55-64,89-100,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,sim,sim,sim,sim
+norte,>=65,53-64,160-179,sim,todos,normal,nao,nao_informou,nao,nao,bom,nao,nao,nao,nao,nao
+norte,>=65,89-100,160-179,nao,nunca,nao_informou,nao,nao_informou,nao,nao,muito_ruim,sim,sim,sim,sim,sim
+norte,>=65,113-124,160-179,nao,quase_nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,sim,nao,sim,sim
+norte,>=65,77-88,160-179,sim,nunca,nao_informou,sim,3-4_dias,nao,nao,bom,nao,nao,sim,nao,nao
+sudeste,>=65,77-88,160-179,nao,1-2_dias,ambos,nao,nao_informou,sim,nao,bom,sim,nao,nao,nao,sim
+sudeste,55-64,89-100,160-179,nao,nunca,nao_informou,nao,nao_informou,sim,nao,bom,sim,nao,nao,sim,sim
+sudeste,>=65,65-76,160-179,nao,nunca,nao_informou,nao,nao_informou,nao,nao,regular,sim,nao,sim,nao,sim
+sudeste,>=65,65-76,160-179,nao,quase_nunca,nao_informou,sim,1-2_dias,nao,nao,bom,sim,nao,nao,nao,sim
+sudeste,35-44,77-88,180-199,nao,5-6_dias,normal,nao,nao_informou,sim,nao,regular,nao,nao,nao,nao,nao
+sudeste,45-54,53-64,160-179,sim,5-6_dias,ambos,sim,3-4_dias,sim,nao,bom,nao,nao,nao,nao,nao
+sudeste,55-64,77-88,160-179,nao,1-2_dias,diet/light/zero,nao,nao_informou,nao,nao,muito_bom,sim,nao,sim,nao,sim
+sudeste,>=65,65-76,160-179,nao,nunca,nao_informou,sim,todos,sim,nao,regular,sim,sim,nao,nao,sim
+sudeste,>=65,65-76,160-179,nao,1-2_dias,normal,nao,nao_informou,sim,nao,muito_bom,sim,nao,nao,nao,sim
+sudeste,>=65,65-76,160-179,nao,nunca,nao_informou,sim,3-4_dias,nao,sim_diariamente,bom,sim,nao,nao,nao,sim
+sudeste,45-54,65-76,160-179,sim,3-4_dias,normal,nao,nao_informou,nao,nao,bom,nao,nao,nao,nao,nao
+sudeste,55-64,53-64,160-179,nao,1-2_dias,diet/light/zero,sim,1-2_dias,nao,nao,regular,sim,sim,nao,nao,sim
+sudeste,>=65,65-76,160-179,nao,nunca,nao_informou,sim,todos,nao,nao,muito_bom,nao,nao,nao,nao,nao
+sudeste,>=65,53-64,180-199,nao,nunca,nao_informou,nao,nao_informou,sim,nao,regular,nao,nao,nao,nao,nao
+sudeste,>=65,53-64,160-179,nao,3-4_dias,normal,nao,nao_informou,sim,nao,bom,sim,nao,sim,nao,sim
+sudeste,>=65,65-76,160-179,sim,nunca,nao_informou,nao,nao_informou,nao,nao,ruim,sim,nao,nao,nao,sim
+sudeste,25-34,53-64,180-199,sim,3-4_dias,normal,sim,1-2_dias,sim,nao,regular,nao,nao,nao,nao,nao

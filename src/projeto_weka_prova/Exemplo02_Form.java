@@ -16,7 +16,7 @@ import weka.core.converters.ConverterUtils.DataSource;
  *
  * @author felip
  */
-public class PROJETO_WEKA_PROVA {
+public class Exemplo02_Form {
 
     /**
      * @param args the command line arguments

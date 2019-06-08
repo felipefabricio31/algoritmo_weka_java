@@ -17,12 +17,12 @@ import weka.core.converters.ConverterUtils;
  *
  * @author felip
  */
-public class Apresentacao extends javax.swing.JFrame {
+public class Exemplo01 extends javax.swing.JFrame {
 
     /**
      * Creates new form Apresentacao
      */
-    public Apresentacao() {
+    public Exemplo01() {
         initComponents();
         
         setLocationRelativeTo(null);
@@ -35,7 +35,8 @@ public class Apresentacao extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         btnProcessar = new javax.swing.JButton();
         txtMasculinoSim = new javax.swing.JTextField();
@@ -56,8 +57,10 @@ public class Apresentacao extends javax.swing.JFrame {
         btnProcessar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnProcessar.setForeground(new java.awt.Color(255, 255, 255));
         btnProcessar.setText("Processar");
-        btnProcessar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnProcessar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnProcessarActionPerformed(evt);
             }
         });
@@ -100,9 +103,8 @@ public class Apresentacao extends javax.swing.JFrame {
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtFemininoSim))
+                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtFemininoSim)
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtMasculinoSim, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -119,7 +121,6 @@ public class Apresentacao extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnProcessar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
@@ -158,7 +159,7 @@ public class Apresentacao extends javax.swing.JFrame {
             // TODO add your handling code here:
             Classificar();
         } catch (Exception ex) {
-            Logger.getLogger(Apresentacao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Exemplo01.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnProcessarActionPerformed
 
@@ -179,20 +180,21 @@ public class Apresentacao extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Apresentacao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Exemplo01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Apresentacao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Exemplo01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Apresentacao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Exemplo01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Apresentacao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Exemplo01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Apresentacao().setVisible(true);
+                new Exemplo01().setVisible(true);
             }
         });
     }
