@@ -29,100 +29,144 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel35" min="-2" pref="131" max="-2" attributes="0"/>
+                          <Component id="ComboBox_ComeCarneComGordura" min="-2" pref="140" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel37" min="-2" pref="129" max="-2" attributes="0"/>
+                          <Component id="Combobox_FrequenciaRefrigerante" min="-2" pref="152" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="Combobox_TipoRefrigerante" min="-2" pref="205" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="ComboBox_BebeBebidaAlcoolica" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="ComboBox_FequenciaBebeAlcool" linkSize="1" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
+                                          <Component id="jLabel42" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="ComboBox_FazExerciciosFisicos" linkSize="1" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLabel49" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="ComboBox_EstadoSaude" linkSize="1" min="-2" pref="113" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel50" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ComboBox_HipertensaoArterial" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel47" min="-2" pref="87" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="ComboBox_TemDiabetes" min="-2" pref="175" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="ComboBox_EstaObeso" min="-2" pref="150" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtSim" pref="131" max="32767" attributes="0"/>
+                                                  <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblSim" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txtNao" pref="144" max="32767" attributes="0"/>
+                                                  <Component id="lblNao" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ComboBox_TemPressaoAlta" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="ComboBox_TemColesterolTrigricerides" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel48" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="btnMinerar" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                           <Component id="ComboBox_Regiao" min="-2" pref="181" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
-                          <Component id="ComboboxIdade9" min="-2" pref="113" max="-2" attributes="0"/>
+                          <Component id="Combobox_Idade" min="-2" pref="113" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel33" min="-2" pref="101" max="-2" attributes="0"/>
-                          <Component id="ComboboxFaixaPeso3" min="-2" pref="113" max="-2" attributes="0"/>
+                          <Component id="ComboBox_Peso" min="-2" pref="113" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel34" alignment="0" min="-2" pref="101" max="-2" attributes="0"/>
-                          <Component id="ComboboxIdade10" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
+                          <Component id="jLabel34" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
+                          <Component id="ComboBox_Altura" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ComboboxIdade11" min="-2" pref="123" max="-2" attributes="0"/>
-                          <Component id="jLabel35" min="-2" pref="131" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ComboBox_BebeBebidaAlcoolica" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
-                          <Component id="jLabel41" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="ComboBox_FequenciaBebeAlcool" min="-2" pref="131" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="ComboBox_FazExerciciosFisicos" min="-2" pref="113" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="ComboBox_Fumante" min="-2" pref="113" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="30" pref="60" max="32767" attributes="0"/>
                           </Group>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel45" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="ComboBox_EstadoSaude" alignment="0" min="-2" pref="94" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ComboBox_TemPressaoAlta" min="-2" pref="87" max="-2" attributes="0"/>
-                          <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel47" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="ComboBox_Fumante" pref="0" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="ComboBox_TemDiabetes" min="-2" pref="69" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel48" max="32767" attributes="0"/>
-                          <Component id="ComboBox_TemColesterolTrigricerides" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel49" min="-2" pref="87" max="-2" attributes="0"/>
-                          <Component id="ComboBox_TemColesterolTrigricerides1" min="-2" pref="61" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Combobox_TipoRefrigerante3" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
-                          <Component id="jLabel37" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
-                          <Component id="Combobox_FrequenciaRegrigerante3" min="-2" pref="129" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -131,63 +175,106 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="ComboboxIdade11" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboboxIdade10" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboboxFaixaPeso3" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ComboboxIdade9" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ComboBox_Regiao" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel38" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Combobox_TipoRefrigerante3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Combobox_FrequenciaRegrigerante3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel35" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel34" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboBox_Altura" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboBox_Peso" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Combobox_Idade" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="ComboBox_Regiao" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel34" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
+                  <Component id="ComboBox_Fumante" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel38" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ComboBox_ComeCarneComGordura" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Combobox_FrequenciaRefrigerante" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Combobox_TipoRefrigerante" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboBox_BebeBebidaAlcoolica" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel43" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel44" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel45" alignment="1" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jLabel45" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel46" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ComboBox_FequenciaBebeAlcool" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboBox_FazExerciciosFisicos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboBox_EstadoSaude" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboBox_TemPressaoAlta" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel48" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel49" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ComboBox_BebeBebidaAlcoolica" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboBox_FequenciaBebeAlcool" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboBox_FazExerciciosFisicos" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboBox_Fumante" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboBox_EstadoSaude" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboBox_TemPressaoAlta" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ComboBox_TemDiabetes" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ComboBox_TemColesterolTrigricerides" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ComboBox_TemColesterolTrigricerides1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboBox_HipertensaoArterial" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboBox_EstaObeso" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="373" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnMinerar" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                              <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtNao" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSim" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblSim" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNao" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -220,11 +307,11 @@
         <Property name="text" type="java.lang.String" value="Idade"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="ComboboxIdade9">
+    <Component class="javax.swing.JComboBox" name="Combobox_Idade">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="6">
-            <StringItem index="0" value="0"/>
+            <StringItem index="0" value="  "/>
             <StringItem index="1" value="&gt;=65"/>
             <StringItem index="2" value="25-34"/>
             <StringItem index="3" value="35-44"/>
@@ -242,11 +329,11 @@
         <Property name="text" type="java.lang.String" value="Peso "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="ComboboxFaixaPeso3">
+    <Component class="javax.swing.JComboBox" name="ComboBox_Peso">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="10">
-            <StringItem index="0" value="0"/>
+            <StringItem index="0" value=" "/>
             <StringItem index="1" value="101-112"/>
             <StringItem index="2" value="113-124"/>
             <StringItem index="3" value="125-136"/>
@@ -268,20 +355,16 @@
         <Property name="text" type="java.lang.String" value="Altura"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="ComboboxIdade10">
+    <Component class="javax.swing.JComboBox" name="ComboBox_Altura">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="10">
-            <StringItem index="0" value="0"/>
-            <StringItem index="1" value="101-112"/>
-            <StringItem index="2" value="113-124"/>
-            <StringItem index="3" value="125-136"/>
-            <StringItem index="4" value="30-40"/>
-            <StringItem index="5" value="41-52"/>
-            <StringItem index="6" value="53-64"/>
-            <StringItem index="7" value="65-76"/>
-            <StringItem index="8" value="77-88"/>
-            <StringItem index="9" value="89-100"/>
+          <StringArray count="6">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="&gt;=200"/>
+            <StringItem index="2" value="120-139"/>
+            <StringItem index="3" value="140-159"/>
+            <StringItem index="4" value="160-179"/>
+            <StringItem index="5" value="180-199"/>
           </StringArray>
         </Property>
       </Properties>
@@ -294,16 +377,13 @@
         <Property name="text" type="java.lang.String" value="Come Carne com Gordura"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="ComboboxIdade11">
+    <Component class="javax.swing.JComboBox" name="ComboBox_ComeCarneComGordura">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="6">
-            <StringItem index="0" value="0"/>
-            <StringItem index="1" value="ComeComGordura"/>
-            <StringItem index="2" value="comercomagordura"/>
-            <StringItem index="3" value="naocomecarnevermelhacommuitagordura"/>
-            <StringItem index="4" value="tirarsempreoexcessodegordura"/>
-            <StringItem index="5" value="tirasempreoexcessodegordura"/>
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
           </StringArray>
         </Property>
       </Properties>
@@ -317,17 +397,15 @@
         <Property name="toolTipText" type="java.lang.String" value="Quantas vezes come carne com gordura?"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="Combobox_FrequenciaRegrigerante3">
+    <Component class="javax.swing.JComboBox" name="Combobox_TipoRefrigerante">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="7">
-            <StringItem index="0" value="0"/>
-            <StringItem index="1" value="1-2dias"/>
-            <StringItem index="2" value="3-4dias"/>
-            <StringItem index="3" value="5-6dias"/>
-            <StringItem index="4" value="nunca"/>
-            <StringItem index="5" value="quasenunca"/>
-            <StringItem index="6" value="todos"/>
+          <StringArray count="5">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="nao_informou"/>
+            <StringItem index="2" value="ambos"/>
+            <StringItem index="3" value="diet/light/zero"/>
+            <StringItem index="4" value="normal"/>
           </StringArray>
         </Property>
       </Properties>
@@ -341,14 +419,17 @@
         <Property name="toolTipText" type="java.lang.String" value="Quantas vezes come carne com gordura?"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="Combobox_TipoRefrigerante3">
+    <Component class="javax.swing.JComboBox" name="Combobox_FrequenciaRefrigerante">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="0"/>
-            <StringItem index="1" value="ambos"/>
-            <StringItem index="2" value="diet/light/zero"/>
-            <StringItem index="3" value="normal"/>
+          <StringArray count="7">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="1-2_dias"/>
+            <StringItem index="2" value="3-4_dias"/>
+            <StringItem index="3" value="5-6_dias"/>
+            <StringItem index="4" value="nunca"/>
+            <StringItem index="5" value="quase_nunca"/>
+            <StringItem index="6" value="todos"/>
           </StringArray>
         </Property>
       </Properties>
@@ -364,9 +445,10 @@
     <Component class="javax.swing.JComboBox" name="ComboBox_BebeBebidaAlcoolica">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="sim"/>
-            <StringItem index="1" value="nao"/>
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
           </StringArray>
         </Property>
       </Properties>
@@ -408,9 +490,10 @@
     <Component class="javax.swing.JComboBox" name="ComboBox_FazExerciciosFisicos">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="sim"/>
-            <StringItem index="1" value="nao"/>
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
           </StringArray>
         </Property>
       </Properties>
@@ -429,10 +512,11 @@
     <Component class="javax.swing.JComboBox" name="ComboBox_Fumante">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="nao"/>
-            <StringItem index="1" value="sim_diariamente"/>
-            <StringItem index="2" value="sim_mas_nao_diariamente"/>
+          <StringArray count="4">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="nao"/>
+            <StringItem index="2" value="sim_diariamente"/>
+            <StringItem index="3" value="sim_mas_nao_diariamente"/>
           </StringArray>
         </Property>
       </Properties>
@@ -476,9 +560,10 @@
     <Component class="javax.swing.JComboBox" name="ComboBox_TemPressaoAlta">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="sim"/>
-            <StringItem index="1" value="nao"/>
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
           </StringArray>
         </Property>
       </Properties>
@@ -497,9 +582,10 @@
     <Component class="javax.swing.JComboBox" name="ComboBox_TemDiabetes">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="sim"/>
-            <StringItem index="1" value="nao"/>
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
           </StringArray>
         </Property>
       </Properties>
@@ -518,9 +604,10 @@
     <Component class="javax.swing.JComboBox" name="ComboBox_TemColesterolTrigricerides">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="sim"/>
-            <StringItem index="1" value="nao"/>
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
           </StringArray>
         </Property>
       </Properties>
@@ -531,17 +618,18 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JComboBox" name="ComboBox_TemColesterolTrigricerides1">
+    <Component class="javax.swing.JComboBox" name="ComboBox_EstaObeso">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="sim"/>
-            <StringItem index="1" value="nao"/>
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
           </StringArray>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBox_TemColesterolTrigricerides1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBox_EstaObesoActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -549,7 +637,100 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel49">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Obesidade?"/>
+        <Property name="text" type="java.lang.String" value="Est&#xe1; obeso(a)?"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ComboBox_HipertensaoArterial">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value=" "/>
+            <StringItem index="1" value="sim"/>
+            <StringItem index="2" value="nao"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBox_HipertensaoArterialActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel50">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Hipertens&#xe3;o Arterial"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnMinerar">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Minerar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMinerarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNao">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSim">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel36">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SIM"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel39">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#xe3;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Prova - Selecione os atributos para realizar a minera&#xe7;&#xe3;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblSim">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="10" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNao">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="10" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
     </Component>
   </SubComponents>

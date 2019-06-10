@@ -5,6 +5,19 @@
  */
 package projeto_weka_prova;
 
+import Classes.Probabilidade;
+import Graficos.GraficoProbabilidade;
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.category.CategoryDataset;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.general.DefaultPieDataset;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -24,6 +37,8 @@ public class Prova extends javax.swing.JFrame
     public Prova()
     {
         initComponents();
+        
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -39,17 +54,17 @@ public class Prova extends javax.swing.JFrame
         jLabel31 = new javax.swing.JLabel();
         ComboBox_Regiao = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
-        ComboboxIdade9 = new javax.swing.JComboBox<>();
+        Combobox_Idade = new javax.swing.JComboBox<>();
         jLabel33 = new javax.swing.JLabel();
-        ComboboxFaixaPeso3 = new javax.swing.JComboBox<>();
+        ComboBox_Peso = new javax.swing.JComboBox<>();
         jLabel34 = new javax.swing.JLabel();
-        ComboboxIdade10 = new javax.swing.JComboBox<>();
+        ComboBox_Altura = new javax.swing.JComboBox<>();
         jLabel35 = new javax.swing.JLabel();
-        ComboboxIdade11 = new javax.swing.JComboBox<>();
+        ComboBox_ComeCarneComGordura = new javax.swing.JComboBox<>();
         jLabel37 = new javax.swing.JLabel();
-        Combobox_FrequenciaRegrigerante3 = new javax.swing.JComboBox<>();
+        Combobox_TipoRefrigerante = new javax.swing.JComboBox<>();
         jLabel38 = new javax.swing.JLabel();
-        Combobox_TipoRefrigerante3 = new javax.swing.JComboBox<>();
+        Combobox_FrequenciaRefrigerante = new javax.swing.JComboBox<>();
         jLabel41 = new javax.swing.JLabel();
         ComboBox_BebeBebidaAlcoolica = new javax.swing.JComboBox<>();
         ComboBox_FequenciaBebeAlcool = new javax.swing.JComboBox<>();
@@ -66,8 +81,18 @@ public class Prova extends javax.swing.JFrame
         ComboBox_TemDiabetes = new javax.swing.JComboBox<>();
         jLabel48 = new javax.swing.JLabel();
         ComboBox_TemColesterolTrigricerides = new javax.swing.JComboBox<>();
-        ComboBox_TemColesterolTrigricerides1 = new javax.swing.JComboBox<>();
+        ComboBox_EstaObeso = new javax.swing.JComboBox<>();
         jLabel49 = new javax.swing.JLabel();
+        ComboBox_HipertensaoArterial = new javax.swing.JComboBox<>();
+        jLabel50 = new javax.swing.JLabel();
+        btnMinerar = new javax.swing.JButton();
+        txtNao = new javax.swing.JTextField();
+        txtSim = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblSim = new javax.swing.JLabel();
+        lblNao = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -78,33 +103,33 @@ public class Prova extends javax.swing.JFrame
 
         jLabel32.setText("Idade");
 
-        ComboboxIdade9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", ">=65", "25-34", "35-44", "45-54", "55-64" }));
+        Combobox_Idade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "  ", ">=65", "25-34", "35-44", "45-54", "55-64" }));
 
         jLabel33.setText("Peso ");
 
-        ComboboxFaixaPeso3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "101-112", "113-124", "125-136", "30-40", "41-52", "53-64", "65-76", "77-88", "89-100" }));
+        ComboBox_Peso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "101-112", "113-124", "125-136", "30-40", "41-52", "53-64", "65-76", "77-88", "89-100" }));
 
         jLabel34.setText("Altura");
 
-        ComboboxIdade10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "101-112", "113-124", "125-136", "30-40", "41-52", "53-64", "65-76", "77-88", "89-100" }));
+        ComboBox_Altura.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", ">=200", "120-139", "140-159", "160-179", "180-199" }));
 
         jLabel35.setText("Come Carne com Gordura");
 
-        ComboboxIdade11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "ComeComGordura", "comercomagordura", "naocomecarnevermelhacommuitagordura", "tirarsempreoexcessodegordura", "tirasempreoexcessodegordura" }));
+        ComboBox_ComeCarneComGordura.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
 
         jLabel37.setText("Frequência de refrigerante");
         jLabel37.setToolTipText("Quantas vezes come carne com gordura?");
 
-        Combobox_FrequenciaRegrigerante3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1-2dias", "3-4dias", "5-6dias", "nunca", "quasenunca", "todos" }));
+        Combobox_TipoRefrigerante.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "nao_informou", "ambos", "diet/light/zero", "normal" }));
 
         jLabel38.setText("Tipo de Refrigerante");
         jLabel38.setToolTipText("Quantas vezes come carne com gordura?");
 
-        Combobox_TipoRefrigerante3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "ambos", "diet/light/zero", "normal" }));
+        Combobox_FrequenciaRefrigerante.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "1-2_dias", "3-4_dias", "5-6_dias", "nunca", "quase_nunca", "todos" }));
 
         jLabel41.setText("Bebe bebida alcoolica");
 
-        ComboBox_BebeBebidaAlcoolica.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "sim", "nao" }));
+        ComboBox_BebeBebidaAlcoolica.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
         ComboBox_BebeBebidaAlcoolica.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -120,7 +145,7 @@ public class Prova extends javax.swing.JFrame
 
         jLabel43.setText("Faz exercicios físicos");
 
-        ComboBox_FazExerciciosFisicos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "sim", "nao" }));
+        ComboBox_FazExerciciosFisicos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
         ComboBox_FazExerciciosFisicos.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -131,7 +156,7 @@ public class Prova extends javax.swing.JFrame
 
         jLabel44.setText("Fumante?");
 
-        ComboBox_Fumante.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "nao", "sim_diariamente", "sim_mas_nao_diariamente" }));
+        ComboBox_Fumante.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "nao", "sim_diariamente", "sim_mas_nao_diariamente" }));
         ComboBox_Fumante.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -153,7 +178,7 @@ public class Prova extends javax.swing.JFrame
 
         jLabel46.setText("Tem pressão alta?");
 
-        ComboBox_TemPressaoAlta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "sim", "nao" }));
+        ComboBox_TemPressaoAlta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
         ComboBox_TemPressaoAlta.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -164,7 +189,7 @@ public class Prova extends javax.swing.JFrame
 
         jLabel47.setText("Tem diabetes?");
 
-        ComboBox_TemDiabetes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "sim", "nao" }));
+        ComboBox_TemDiabetes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
         ComboBox_TemDiabetes.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -175,7 +200,7 @@ public class Prova extends javax.swing.JFrame
 
         jLabel48.setText("Tem colesterol ou trigriceres?");
 
-        ComboBox_TemColesterolTrigricerides.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "sim", "nao" }));
+        ComboBox_TemColesterolTrigricerides.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
         ComboBox_TemColesterolTrigricerides.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -184,16 +209,58 @@ public class Prova extends javax.swing.JFrame
             }
         });
 
-        ComboBox_TemColesterolTrigricerides1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "sim", "nao" }));
-        ComboBox_TemColesterolTrigricerides1.addActionListener(new java.awt.event.ActionListener()
+        ComboBox_EstaObeso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
+        ComboBox_EstaObeso.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                ComboBox_TemColesterolTrigricerides1ActionPerformed(evt);
+                ComboBox_EstaObesoActionPerformed(evt);
             }
         });
 
-        jLabel49.setText("Obesidade?");
+        jLabel49.setText("Está obeso(a)?");
+
+        ComboBox_HipertensaoArterial.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "sim", "nao" }));
+        ComboBox_HipertensaoArterial.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                ComboBox_HipertensaoArterialActionPerformed(evt);
+            }
+        });
+
+        jLabel50.setText("Hipertensão Arterial");
+
+        btnMinerar.setBackground(new java.awt.Color(51, 102, 255));
+        btnMinerar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMinerar.setForeground(new java.awt.Color(255, 255, 255));
+        btnMinerar.setText("Minerar");
+        btnMinerar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnMinerarActionPerformed(evt);
+            }
+        });
+
+        txtNao.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        txtSim.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        jLabel36.setText("SIM");
+
+        jLabel39.setText("Não");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setText("Prova - Selecione os atributos para realizar a mineração");
+
+        lblSim.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        lblSim.setForeground(new java.awt.Color(255, 51, 51));
+        lblSim.setText("0");
+
+        lblNao.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        lblNao.setForeground(new java.awt.Color(255, 51, 51));
+        lblNao.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -204,129 +271,193 @@ public class Prova extends javax.swing.JFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ComboBox_ComeCarneComGordura, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Combobox_FrequenciaRefrigerante, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jLabel38))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(Combobox_TipoRefrigerante, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel41)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(ComboBox_BebeBebidaAlcoolica, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap())
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addComponent(jLabel45))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(ComboBox_FequenciaBebeAlcool, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel42))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel43)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(ComboBox_FazExerciciosFisicos, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel49)
+                                                    .addComponent(ComboBox_EstadoSaude, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel50)
+                                            .addComponent(ComboBox_HipertensaoArterial, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(ComboBox_TemDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(ComboBox_EstaObeso, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(txtSim, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                                                    .addComponent(jLabel36)
+                                                    .addComponent(lblSim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGap(50, 50, 50)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(jLabel39)
+                                                    .addComponent(txtNao, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
+                                                    .addComponent(lblNao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ComboBox_TemPressaoAlta, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(ComboBox_TemColesterolTrigricerides, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel46)
+                                            .addComponent(jLabel48))
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addComponent(btnMinerar, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel31)
                             .addComponent(ComboBox_Regiao, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel32)
-                            .addComponent(ComboboxIdade9, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Combobox_Idade, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ComboboxFaixaPeso3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ComboBox_Peso, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ComboboxIdade10, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ComboBox_Altura, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ComboboxIdade11, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ComboBox_BebeBebidaAlcoolica, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel41))
-                        .addGap(22, 22, 22)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(ComboBox_FequenciaBebeAlcool, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ComboBox_FazExerciciosFisicos, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ComboBox_Fumante, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel44)
+                                .addGap(30, 60, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel42)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel43)
-                                .addGap(32, 32, 32)
-                                .addComponent(jLabel44)))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel45)
-                            .addComponent(ComboBox_EstadoSaude, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ComboBox_TemPressaoAlta, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel46))))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(ComboBox_TemDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(24, 24, 24)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ComboBox_TemColesterolTrigricerides, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ComboBox_TemColesterolTrigricerides1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Combobox_TipoRefrigerante3, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel38)
-                            .addComponent(Combobox_FrequenciaRegrigerante3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(ComboBox_Fumante, 0, 0, Short.MAX_VALUE)
+                                .addContainerGap())))))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {ComboBox_EstadoSaude, ComboBox_FazExerciciosFisicos, ComboBox_FequenciaBebeAlcool});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(ComboboxIdade11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboboxIdade10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboboxFaixaPeso3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel32)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ComboboxIdade9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel31)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ComboBox_Regiao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel37)
-                                .addComponent(jLabel38))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Combobox_TipoRefrigerante3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Combobox_FrequenciaRegrigerante3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel35)
-                            .addComponent(jLabel34)
-                            .addComponent(jLabel33))))
+                            .addComponent(ComboBox_Altura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ComboBox_Peso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Combobox_Idade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel31)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ComboBox_Regiao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel34)
+                                    .addComponent(jLabel33))
+                                .addGap(26, 26, 26))))
+                    .addComponent(ComboBox_Fumante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel44)
+                        .addGap(26, 26, 26)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(jLabel37)
+                    .addComponent(jLabel38)
+                    .addComponent(jLabel41))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ComboBox_ComeCarneComGordura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Combobox_FrequenciaRefrigerante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Combobox_TipoRefrigerante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboBox_BebeBebidaAlcoolica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel41)
                     .addComponent(jLabel42)
                     .addComponent(jLabel43)
-                    .addComponent(jLabel44)
+                    .addComponent(jLabel45)
+                    .addComponent(jLabel46))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ComboBox_FequenciaBebeAlcool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboBox_FazExerciciosFisicos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboBox_EstadoSaude, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboBox_TemPressaoAlta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel47)
-                    .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel46)
                     .addComponent(jLabel48)
+                    .addComponent(jLabel50)
                     .addComponent(jLabel49))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ComboBox_BebeBebidaAlcoolica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboBox_FequenciaBebeAlcool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboBox_FazExerciciosFisicos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboBox_Fumante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboBox_EstadoSaude, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboBox_TemPressaoAlta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ComboBox_TemDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ComboBox_TemColesterolTrigricerides, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ComboBox_TemColesterolTrigricerides1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(373, Short.MAX_VALUE))
+                    .addComponent(ComboBox_HipertensaoArterial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ComboBox_EstaObeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnMinerar)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addComponent(jLabel39)
+                                .addGap(1, 1, 1))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtNao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblSim)
+                            .addComponent(lblNao))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -367,10 +498,58 @@ public class Prova extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_ComboBox_TemColesterolTrigriceridesActionPerformed
 
-    private void ComboBox_TemColesterolTrigricerides1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ComboBox_TemColesterolTrigricerides1ActionPerformed
-    {//GEN-HEADEREND:event_ComboBox_TemColesterolTrigricerides1ActionPerformed
+    private void ComboBox_EstaObesoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ComboBox_EstaObesoActionPerformed
+    {//GEN-HEADEREND:event_ComboBox_EstaObesoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ComboBox_TemColesterolTrigricerides1ActionPerformed
+    }//GEN-LAST:event_ComboBox_EstaObesoActionPerformed
+
+    private void ComboBox_HipertensaoArterialActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ComboBox_HipertensaoArterialActionPerformed
+    {//GEN-HEADEREND:event_ComboBox_HipertensaoArterialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ComboBox_HipertensaoArterialActionPerformed
+
+    private void btnMinerarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnMinerarActionPerformed
+    {//GEN-HEADEREND:event_btnMinerarActionPerformed
+        try
+        {
+            Probabilidade prob = new Probabilidade();
+            
+            prob.Regiao =  ComboBox_Regiao.getSelectedItem().toString();
+            prob.Idade = Combobox_Idade.getSelectedItem().toString();
+            prob.Peso = ComboBox_Peso.getSelectedItem().toString();
+            prob.Altura = ComboBox_Altura.getSelectedItem().toString();
+            prob.ComeCarneComGordura = ComboBox_ComeCarneComGordura.getSelectedItem().toString();
+            prob.FrequenciaBebeRefrigerante = Combobox_FrequenciaRefrigerante.getSelectedItem().toString();
+            prob.TipoRefrigerante = Combobox_TipoRefrigerante.getSelectedItem().toString();
+            prob.BebeBebidaAlcoolica = ComboBox_BebeBebidaAlcoolica.getSelectedItem().toString();
+            prob.FrequenciaBebeAlcool = ComboBox_FequenciaBebeAlcool.getSelectedItem().toString();
+            prob.FazExerciciosFisicos = ComboBox_FazExerciciosFisicos.getSelectedItem().toString();
+            prob.Fumante = ComboBox_Fumante.getSelectedItem().toString();
+            prob.EstadoSaude = ComboBox_EstadoSaude.getSelectedItem().toString();
+            prob.TemPressaoAlta = ComboBox_TemPressaoAlta.getSelectedItem().toString();
+            prob.TemDiabetes = ComboBox_TemDiabetes.getSelectedItem().toString();
+            prob.TemColesterolTrigecerides = ComboBox_TemColesterolTrigricerides.getSelectedItem().toString();
+            prob.TemHipertensaoArterial = ComboBox_HipertensaoArterial.getSelectedItem().toString();
+            prob.EstaObeso = ComboBox_EstaObeso.getSelectedItem().toString();            
+            
+            // TODO add your handling code here:
+            if (prob.Altura != "" && prob.BebeBebidaAlcoolica != "" && prob.ComeCarneComGordura != "" && prob.EstaObeso != "" && prob.EstadoSaude != ""
+                    && prob.FazExerciciosFisicos != "" && prob.FrequenciaBebeAlcool != "" && prob.FrequenciaBebeRefrigerante != "" && 
+                    prob.Fumante != "" && prob.Idade != "" && prob.Peso != "" && prob.Regiao != "" && prob.TemColesterolTrigecerides != "" &&
+                    prob.TemDiabetes != "" && prob.TemHipertensaoArterial != "" && prob.TemPressaoAlta != "" && prob.TipoRefrigerante != "")
+            {
+                Probabilidades(prob);
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null, "Por favor, selecione todos os campos para realizar a mineração.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.getLogger(Prova.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnMinerarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -422,75 +601,103 @@ public class Prova extends javax.swing.JFrame
             }
         });
     }
-    
-    public void Probablidades() throws Exception
+
+    public void Probabilidades(Probabilidade prob) throws Exception
     {
-        // TODO code application logic here
-        //Instacia da base de dados
-        ConverterUtils.DataSource ds = new ConverterUtils.DataSource("src/Dados/DadosProva.arff");
-        //Atribuição dos valores da API para ins
-        Instances ins =  ds.getDataSet();
-        //System.out.println(ins.toString());
-        
-        //Qual atributo eu quero fazer a previsão
-        ins.setClassIndex(16);
-        
-        //Este será o algoritmo que vai fazer a previsão
-        NaiveBayes nb = new NaiveBayes();
-        //Cria o classificador
-        nb.buildClassifier(ins);
-        
-        Instance novo = new DenseInstance(17);
-        //Está relacionado o novo registro com a base de dados
-        novo.setDataset(ins);
-        novo.setValue(0,ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(1, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(2, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(3, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(4, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(5, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(6, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(7, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(8, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(9, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(10, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(11, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(12, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(13, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(14, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(15, ComboBox_Regiao.getSelectedItem().toString());
-        novo.setValue(16, ComboBox_Regiao.getSelectedItem().toString());
-        
-        //Qual a porcentagem desta pessoa gastar muito
-        double probabilidade[] = nb.distributionForInstance(novo);
-        System.out.println("Sim: " + probabilidade[1]);
-        System.out.println("Não: " + probabilidade[0]);
+        try
+        {
+            // TODO code application logic here
+            //Instacia da base de dados
+            ConverterUtils.DataSource ds = new ConverterUtils.DataSource("src/Dados/DadosProva.arff");
+            //Atribuição dos valores da API para ins
+            Instances ins = ds.getDataSet();
+            //System.out.println(ins.toString());
+
+            //Qual atributo eu quero fazer a previsão
+            ins.setClassIndex(16);
+
+            //Este será o algoritmo que vai fazer a previsão
+            NaiveBayes nb = new NaiveBayes();
+            //Cria o classificador
+            nb.buildClassifier(ins);
+
+            Instance novo = new DenseInstance(17);
+            //Está relacionado o novo registro com a base de dados
+            novo.setDataset(ins);
+            novo.setValue(0, prob.Regiao);
+            novo.setValue(1, prob.Idade);
+            novo.setValue(2, prob.Peso);
+            novo.setValue(3, prob.Altura);
+            novo.setValue(4, prob.ComeCarneComGordura);
+            novo.setValue(5, prob.FrequenciaBebeRefrigerante);
+            novo.setValue(6, prob.TipoRefrigerante);
+            novo.setValue(7, prob.BebeBebidaAlcoolica);
+            novo.setValue(8, prob.FrequenciaBebeAlcool);
+            novo.setValue(9, prob.FazExerciciosFisicos);
+            novo.setValue(10, prob.Fumante);
+            novo.setValue(11, prob.EstadoSaude);
+            novo.setValue(12, prob.TemPressaoAlta);
+            novo.setValue(13, prob.TemDiabetes);
+            novo.setValue(14, prob.TemColesterolTrigecerides);
+            novo.setValue(15, prob.TemHipertensaoArterial);
+            novo.setValue(16, prob.EstaObeso);
+
+            //Qual a porcentagem desta pessoa gastar muito
+            double probabilidade[] = nb.distributionForInstance(novo);
+            
+            System.out.println("Sim: " + probabilidade[1]);
+            System.out.println("Não: " + probabilidade[0]);
+            
+            Locale localeBR = new Locale("pt","BR");
+            NumberFormat percentual = NumberFormat.getPercentInstance(localeBR);
+
+            txtSim.setText(percentual.format(probabilidade[1]));
+            txtNao.setText(percentual.format(probabilidade[0]));
+            
+            double sim = probabilidade[1];
+            double nao = probabilidade[0];
+                        
+            lblSim.setText(String.valueOf(sim));
+            lblNao.setText(String.valueOf(nao));          
+
+            GraficoProbabilidade grafico = new GraficoProbabilidade(sim, nao);
+            grafico.show();
+        }
+        catch (Exception ex)
+        {
+            JOptionPane.showMessageDialog(null, "Erro na programação! \n " + ex.getMessage(), "Erro", 0);
+        }
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> ComboBox_Altura;
     private javax.swing.JComboBox<String> ComboBox_BebeBebidaAlcoolica;
+    private javax.swing.JComboBox<String> ComboBox_ComeCarneComGordura;
+    private javax.swing.JComboBox<String> ComboBox_EstaObeso;
     private javax.swing.JComboBox<String> ComboBox_EstadoSaude;
     private javax.swing.JComboBox<String> ComboBox_FazExerciciosFisicos;
     private javax.swing.JComboBox<String> ComboBox_FequenciaBebeAlcool;
     private javax.swing.JComboBox<String> ComboBox_Fumante;
+    private javax.swing.JComboBox<String> ComboBox_HipertensaoArterial;
+    private javax.swing.JComboBox<String> ComboBox_Peso;
     private javax.swing.JComboBox<String> ComboBox_Regiao;
     private javax.swing.JComboBox<String> ComboBox_TemColesterolTrigricerides;
-    private javax.swing.JComboBox<String> ComboBox_TemColesterolTrigricerides1;
     private javax.swing.JComboBox<String> ComboBox_TemDiabetes;
     private javax.swing.JComboBox<String> ComboBox_TemPressaoAlta;
-    private javax.swing.JComboBox<String> ComboboxFaixaPeso3;
-    private javax.swing.JComboBox<String> ComboboxIdade10;
-    private javax.swing.JComboBox<String> ComboboxIdade11;
-    private javax.swing.JComboBox<String> ComboboxIdade9;
-    private javax.swing.JComboBox<String> Combobox_FrequenciaRegrigerante3;
-    private javax.swing.JComboBox<String> Combobox_TipoRefrigerante3;
+    private javax.swing.JComboBox<String> Combobox_FrequenciaRefrigerante;
+    private javax.swing.JComboBox<String> Combobox_Idade;
+    private javax.swing.JComboBox<String> Combobox_TipoRefrigerante;
+    private javax.swing.JButton btnMinerar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
@@ -500,5 +707,10 @@ public class Prova extends javax.swing.JFrame
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel lblNao;
+    private javax.swing.JLabel lblSim;
+    private javax.swing.JTextField txtNao;
+    private javax.swing.JTextField txtSim;
     // End of variables declaration//GEN-END:variables
 }

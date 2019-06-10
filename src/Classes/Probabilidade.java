@@ -11,7 +11,21 @@ package Classes;
  */
 public class Probabilidade
 {
-    
-    
-    
+    public String Regiao;
+    public String Idade;
+    public String Peso;
+    public String Altura;
+    public String ComeCarneComGordura;
+    public String FrequenciaBebeRefrigerante;
+    public String TipoRefrigerante;
+    public String BebeBebidaAlcoolica;
+    public String FrequenciaBebeAlcool;
+    public String FazExerciciosFisicos;
+    public String Fumante;
+    public String EstadoSaude;
+    public String TemPressaoAlta;
+    public String TemDiabetes;
+    public String TemColesterolTrigecerides;
+    public String TemHipertensaoArterial;
+    public String EstaObeso;  
 }
